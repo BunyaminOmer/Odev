@@ -3,7 +3,7 @@ sayilar = [1,3,5,7,9,12,19,21]
 # 1- Sayılar listesindeki hangi sayılar 3'ün katıdır ?
 
 for sayi in sayilar:
-    if print(sayi%3==0):
+    if print(sayi%3==0):     # 3'e tam bölünen zaten 3'ün katıdır
         print(sayi)
 
 # 2- Sayılar listesinde sayıların toplamı kaçtır ?
@@ -16,15 +16,15 @@ for sayi in sayilar:
 # 3- Sayılar listesindeki tek sayıların karesini alınız.
 
 for sayi in sayilar:
-    if (sayi % 2 == 1):
-        print(sayi ** 2)
+    if (sayi % 2 == 1):   # Bu satırda 2 ye tam bölünüp modu 1 e eşitse  sonraki adıma geçer
+        print(sayi ** 2)  # Eğer yukarıdaki işlem True ise tek sayıların karesini alır.
 
 # 4- Şehirlerden hangileri en fazla 5 karakterlidir ?
 
 sehirler = ["kocaeli","istanbul","ankara","izmir","rize"] 
 
 for sehir in sehirler:
-    if (len(sehir) <= 5):
+    if (len(sehir) <= 5):    # Şehir içindeki verilerin harf sayısı 5 veya 5 ten küçükse onları ekrana yazdırır.
         print(sehir)
 
 urunler = [
@@ -46,5 +46,5 @@ print("toplam ürün fiyatı: ", toplam)
 #  6- Ürünlerden fiyatı en fazla 5000 olan ürünleri gösteriniz ?
 
 for urun in urunler:
-    if (int(urun["price"]) <= 5000):
+    if (int(urun["price"]) <= 5000):     # 5000 yada 5000 den az para olan ürünleri ekrana yazdırır.
         print(urun["name"])
